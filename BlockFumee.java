@@ -84,5 +84,10 @@ public class BlockFumee extends Block
                 var9 = (float)par4 + par5Random.nextFloat() * 1.0F;
                     par1World.spawnParticle("largesmoke", (double)var7, (double)var8, (double)var9, 0.0D, 0.0D, 0.0D);
             }
+            
+            if (par5Random.nextInt(24) == 0)
+            {
+                par1World.playSound((double)((float)par2 + 0.5F), (double)((float)par3 + 0.5F), (double)((float)par4 + 0.5F), "fire.fire", 1.0F + par5Random.nextFloat(), par5Random.nextFloat() * 0.7F + 0.3F, false);
+            }
       }
 }
